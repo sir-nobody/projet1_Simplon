@@ -1,0 +1,110 @@
+*{
+    margin:0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "manrope", sans-serif;
+    font-size: 1em;
+    background-color: #1f2039;
+    color: white;
+}
+h1, h2 {
+    color: #A5B4FC;
+}
+
+.messageBienvenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2b46;
+    height: 200px;
+}
+
+h2{
+    margin: 15px 0px 15px 90px;
+}
+
+.conteneur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteneur div{
+    width: 65%;
+    border-bottom: 1px solid #343654;
+    color: rgb(204, 190, 190);
+}
+
+footer div{
+    text-align: center; 
+    margin-top: 15px;
+
+}
+
+button{
+    color: #A5B4FC;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px;
+    background-color:rgb(154, 39, 39);
+    border-radius: 8px;
+}
+button:hover {
+    background-color: rgba(154, 39, 39, 0.5);
+    cursor: pointer;
+}
+
+button:focus {
+    border: 3px solid rgb(154, 39, 39, 0.7);
+    padding: 2px;
+}
+
+ footer {
+
+    background-color: #2a2b46;
+
+}
+
+/* gestion popup */
+
+/* pourquoi cette portion ne se comporte pas comme je l'ai decrit dans mon style  */
+.popup-background { 
+    display: none;                              
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.popup-background:hover {
+    cursor: pointer;
+}
+
+.active{
+    display: flex;
+}
+
+.popup:hover {
+    cursor:auto
+}
+
+.popup{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+    background-color: #1f2039;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 1;
+    
+}
