@@ -5,6 +5,7 @@
 body {
     display: flex;
     flex-direction: column;
+    justify-content:flex-end;
     font-family: "manrope", sans-serif;
     font-size: 1em;
     background-color: #1f2039;
@@ -68,6 +69,7 @@ button:focus {
  footer {
 
     background-color: #2a2b46;
+    margin-top: 100%;
 
 }
 
